@@ -12,7 +12,7 @@
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap">
 
 
-<link rel="stylesheet" href="/scss/style.min.e62e09c60ba428a627e03568fa3df938f6a8224f815b5846f00816c17d4a0be4.css"><meta property='og:title' content="Markdown学习笔记">
+<link rel="stylesheet" href="/scss/style.min.799d4eb5edb117f7012621164cf273d31efe3561381d5c5d3a82cda35aedd700.css"><meta property='og:title' content="Markdown学习笔记">
 <meta property='og:description' content="一、Markdown基本语法 1. 标题 Markdown支持两种标题的语法，类Setext和类atx形式。类Setext形式是用底线的形式，利用=（最高阶标题）和-（第二阶标题），例如：\nThis is an H1\n=======\nThis is an H2\n-&mdash;&mdash;&mdash;&mdash;\n显示效果：\nThis is an H1 This is an H2 任何数量的=和-都可以有效果。\n需要注意一点，由于分割线也是‘&mdash;&mdash;’，因此在使用分割线时，一定要空一行，不然会把上方文字识别为第二阶标题。原因会在后面的段落和换行种说到。\n类Atx形式则是在行首插入1到6个#号，对应标题1到6阶，示例：\n# this is H1\n## this is H2\n### this is H3\n#### this is H4\n##### this is H5\n###### this is H6\n显示效果：\nthis is H1 this is H2 this is H3 this is H4 this is H5 this is H6 要注意的是，#号后面必须跟一个空格再写文本，不然无法识别为标题。\n按规范来说，同一份文件中一阶标题只能有一个，且标题前后都要空一行。推荐使用#号的方式。\n">
 <meta property='og:url' content='http://localhost:1313/post/markdown%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/'>
 <meta property='og:site_name' content='keake的个人博客'>
@@ -200,12 +200,12 @@
 <h3 id="2-字体">2. 字体
 </h3><p>Markdown使用星号*、底线_还有波浪~（英文输入法下）作为标记强调字词的符号，用单星号或单底线括起来的文字会倾斜，用双星号或双底线括起来的文字会加粗，用三星号或三底线括起来的文字会倾斜并加粗，用双波浪号括起来的文字会加删除线。</p>
 <p>你可以随便用你喜欢的样式，唯一的限制是，你用什么符号开启标签，就要用什么符号结束。个人感觉写中文时还是使用*号比较方便，因为它不区分全角半角，不用切换输入法。示例：</p>
-<p>*<em>这是加粗</em>*<br>
-_<em>这也是加粗</em>_<br>
+<p>**这是加粗**<br>
+__这也是加粗__<br>
 *这是倾斜*<br>
 _这也是倾斜_<br>
-*<strong>这是加粗倾斜</strong>*<br>
-_<strong>这也是加粗倾斜</strong>_<br>
+***这是加粗倾斜***<br>
+___这也是加粗倾斜___<br>
 ~~这是加删除线~~</p>
 <p>效果如下：<br>
 <strong>这是加粗</strong><br>
@@ -267,19 +267,7 @@ Donec sit amet nisl. Aliquam semper ipsum sit amet velit. Suspendisseid sem cons
         <p>This is nested blockquote.</p>
 
     </blockquote>
-
-    <blockquote>
-        
-    <blockquote>
-        
-    <blockquote>
-        <p>Back to the first level.</p>
-
-    </blockquote>
-
-    </blockquote>
-
-    </blockquote>
+<p>Back to the first level.</p>
 
     </blockquote>
 <p>引用的区块内也可以使用其他的Markdown语法，包括标题、列表、代码区块等。</p>
